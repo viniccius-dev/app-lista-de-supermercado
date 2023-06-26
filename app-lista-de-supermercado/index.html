@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Supermercado</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background: #5a71bb;
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .list-register {
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .list-register input[type=text]{
+            flex: 1;
+            height: 40px;
+            padding-left: 20px;
+        }
+
+        .list-product-single {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .list-product-single h3 {
+            flex: 1;
+            padding: 0 20px;
+        }
+        h3.price-product {
+            text-align: right;
+            font-size: 17px;
+        }
+        h3.price-product span {
+           background-color: #5a71bb;
+           padding: 8px 10px;
+           border-radius: 20px;
+           color: white; 
+        }
+        .sum-product {
+            margin: 20px;
+        }
+        button {
+            padding: 10px;
+            margin: 20px;
+            background: darkblue;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>App Lista de SuperMercado</h2>
+    </header>
+    <div class="list-register">
+        <input type="text" placeholder="Nome do produto..." name="nameProduct">
+        <input type="number" step="0.01" placeholder="Valor do produto..." name="price">
+        <input type="submit" name="acao" value="Cadastrar">
+    </div>
+
+    <div class="list-products">
+        
+    </div>
+
+    <div class="sum-product">
+        <h1>Total: R$0,00</h1>
+    </div>
+
+    <button name="clean">Limpar</button>
+
+    <script src="supermarket.js"></script>
+</body>
+</html>
